@@ -4,10 +4,9 @@ import android.os.Bundle;
 import android.widget.FrameLayout;
 
 import com.shaw.core.R;
-import com.shaw.core.delegates.LatteDelegate;
+import com.shaw.core.delegates.ShawDelegate;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ContentFrameLayout;
 import io.reactivex.annotations.Nullable;
 import me.yokeyword.fragmentation.ExtraTransaction;
 import me.yokeyword.fragmentation.ISupportActivity;
@@ -22,7 +21,7 @@ public abstract class ProxyActivity extends AppCompatActivity implements ISuppor
 
     private final SupportActivityDelegate DELEGATE = new SupportActivityDelegate(this);
 
-    public abstract LatteDelegate setRootDelegate();
+    public abstract ShawDelegate setRootDelegate();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

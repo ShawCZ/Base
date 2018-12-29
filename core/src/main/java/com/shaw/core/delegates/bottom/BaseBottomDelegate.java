@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.shaw.core.R;
 import com.shaw.core.R2;
-import com.shaw.core.delegates.LatteDelegate;
+import com.shaw.core.delegates.ShawDelegate;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -27,7 +27,7 @@ import me.yokeyword.fragmentation.ISupportFragment;
  * Created by shaw on 2017/9/6.
  */
 
-public abstract class BaseBottomDelegate extends LatteDelegate implements View.OnClickListener {
+public abstract class BaseBottomDelegate extends ShawDelegate implements View.OnClickListener {
 
     private final ArrayList<BottomTabBean> TAB_BEANS = new ArrayList<>();
     private final ArrayList<BottomItemDelegate> ITEM_DELEGATES = new ArrayList<>();

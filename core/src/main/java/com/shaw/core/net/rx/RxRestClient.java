@@ -22,21 +22,21 @@ import okhttp3.ResponseBody;
 
 public class RxRestClient {
     private final String URL;
-    private static final WeakHashMap<String, Object> PARAMS = new WeakHashMap<>();
+    private final WeakHashMap<String, Object> PARAMS;
     private final RequestBody BODY;
     private final File FILE;
-    private final Context CONTEXT;
+    private final String FILE_NAME;
 
     public RxRestClient(String url,
-                        Map<String, Object> params,
+                        WeakHashMap<String, Object> params,
                         RequestBody body,
                         File file,
-                        Context context) {
+                        String fileName) {
         this.URL = url;
-        PARAMS.putAll(params);
+        this.PARAMS = params;
         this.BODY = body;
         this.FILE = file;
-        this.CONTEXT = context;
+        this.FILE_NAME = fileName;
     }
 
     public static RxRestClientBuilder builder() {

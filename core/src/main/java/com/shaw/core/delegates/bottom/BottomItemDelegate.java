@@ -4,13 +4,13 @@ import android.widget.Toast;
 
 import com.shaw.core.R;
 import com.shaw.core.app.Core;
-import com.shaw.core.delegates.LatteDelegate;
+import com.shaw.core.delegates.ShawDelegate;
 
 /**
  * Created by shaw on 2017/9/6.
  */
 
-public abstract class BottomItemDelegate extends LatteDelegate {
+public abstract class BottomItemDelegate extends ShawDelegate {
     //再点一次退出程序时间设置
     private static final long WAIT_TIME = 2000L;
     private long TOUCH_TIME = 0;
